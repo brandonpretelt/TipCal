@@ -11,7 +11,7 @@ function allCalc() {
         decToPercent2  = tip / 100,
         newprice;
     
-    if (!isNaN(cost) && !isNaN(tip) && people <= 1) {
+    if (!isNaN(cost) && !isNaN(tip) && people <= 1 || people === 0 || people === "") {
         newprice = tipCalc(cost, tip);
         document.getElementById("output").textContent = "$" + newprice.toFixed(2);
         document.getElementById("le").textContent = "$" + parseFloat(cost * (decToPercent2)).toFixed(2);
@@ -21,8 +21,6 @@ function allCalc() {
         document.getElementById("output").textContent = "$" + peepcost.toFixed(2);
         document.getElementById("le").textContent = "$" + peeptip.toFixed(2);
     }
-
-
     
     return false;
     
