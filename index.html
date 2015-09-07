@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main>
+   <div>
+      <h2> Tip Calculator </h2>
+      <form id="calc" class="calc" method="POST">
+          <fieldset>
+             <div>
+                <label for="cost">Total Cost: </label>
+                <input type="text" name="cost" id="cost">
+             </div>
+
+             <div>
+                <label for="tip">Tip Percent: </label>
+                <input type="text" name="tip" id="tip">
+             </div>
+              
+              <div>
+                  <label for="people">Number of People: </label>
+                  <input type="text" name="people" id="people">
+              </div>
+
+            <input type="submit" class="btn" value="Calculate" id="btn">
+            <br> <br>
+            <!-- <span>Total:&nbsp;</span><span id="output"></span> -->
+            <span>Total Per Person: </span>
+            <div id="output"></div>
+            
+            <span>Total Tip Per Person: </span>
+            <div id="le"></div>
+    
+          </fieldset>
+      </form>
+   </div>
+</main>
+</body>
+<script src="js/script.js"></script>
+</html>
