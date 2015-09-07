@@ -103,7 +103,7 @@ body {
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
     }
     
-    .card span {
+    .card span, .card #le, .card #output {
         display: block;
         margin-left: 20px;
         margin-bottom: 20px;
