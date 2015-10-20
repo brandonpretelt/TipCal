@@ -15,19 +15,30 @@
       <form id="calc" class="calc" method="POST">
           <fieldset>
              <div>
-                <label for="cost">Total Cost: </label>
+                <label for="cost">Bill: </label>
                 <input type="text" name="cost" id="cost" placeholder="Cost">
              </div>
 
              <div>
+                 <label for="tip">Tip (%):</label>
+                 <input type="number" min="1" max="99" name="tip" id="tip" placeholder="Tip (%)">
+             </div>
+             
+             <div>
+                 <label for="people">Number of people: </label>
+                 <input type="number" min="0" max="50" name="people" id="people" placeholder="# of People">
+             </div>
+             
+             <!-- <div>
                 <label for="tip">Tip Percent: </label>
                 <input type="text" name="tip" id="tip" placeholder="Tip (%)">
-             </div>
-              
+             </div> -->
+              <!-- 
               <div>
                   <label for="people">Split: </label>
                   <input type="text" name="people" id="people" placeholder="Number of People (optional)">
               </div>
+              -->
 
             <input type="submit" class="btn" value="Calculate" id="btn">
               </div>
@@ -36,17 +47,17 @@
             <!-- <span>Total:&nbsp;</span><span id="output"></span> -->
             
             <div class="card">
-                <span>Total: </span>
+                <span>Total per Person: </span>
                 <div id="output"></div>
 
-                <span>Split Total: </span>
+                <span>Tip per Person: </span>
                 <div id="le"></div>
             </div>
     
           </fieldset>
       </form>
       
-      <form id="LoginTest" class="calc" method="POST">
+      <!-- <form id="LoginTest" class="calc" method="POST">
           <fieldset>
               <div>
                   <label for="uName">User Name: </label>
@@ -59,7 +70,7 @@
               <input type="submit" class="btn" value="Login" id="btn2">
               
           </fieldset>
-      </form>
+      </form> -->
       
    </div>
 </main>

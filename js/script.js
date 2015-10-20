@@ -32,7 +32,7 @@ function allCalc() { // the actual calculator
     // conditional checks to make sure everything is correct and there are no values missing. 
     // people === 0 alows users to enter 0 as number if they are on their own 
     
-    if (!isNaN(cost) && !isNaN(tip) && people <= 1 || people === 0 || people === "") {
+    if (/*!isNaN(cost) && !isNaN(tip) && */people <= 1 || people === 0 || people === "") {
         
         // sets the value of newprice to the return value of tipCalc   
         newprice = tipCalc(cost, tip); 
@@ -51,8 +51,7 @@ function allCalc() { // the actual calculator
         // outputs the data to divs as formatted float values
         document.getElementById("output").textContent = "$" + peepcost.toFixed(2);
         document.getElementById("le").textContent = "$" + peeptip.toFixed(2);
-    }
-    
+    } 
 
     return false;
     
@@ -63,7 +62,7 @@ function allCalc() { // the actual calculator
 /*var validation = document.getElementById("LoginTest");
 validation.addEventListener("submit", validate, false);*/
 
-function validate() {
+/* function validate() {
     
     // don't forget to test this! upload to git and filezilla
     
@@ -80,12 +79,12 @@ function validate() {
     } 
     
     return false;
-}
+} */
 
 
 function init() {
     document.getElementById("calc").onsubmit = allCalc;
-    document.getElementById("LoginTest").onsubmit = validate;
+    // document.getElementById("LoginTest").onsubmit = validate;
 }
 
 window.onload = init;
