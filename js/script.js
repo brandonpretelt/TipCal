@@ -15,7 +15,7 @@ function tipCalc(c, t) { // the formula
     // c is cost, t is tip 
 
     var decToPercent = t / 100; // divides tip by 100 in order to get a decimal value to be turned into a percent 
-    newprice = parseFloat(c * (decToPercent)) + parseFloat(c); // turns sum value into floats
+    var newprice = parseFloat(c * (decToPercent)) + parseFloat(c); // turns sum value into floats
     return newprice; // returns the sum of above ^^^ 
 }
 
