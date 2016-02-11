@@ -84,7 +84,7 @@ function validate(e) {
 
 function init() {
     document.getElementById("calc").addEventListener("submit", allCalc, false);
-    document.getElementById("LoginTest").addEventListener("submit", validate, false);
+    // document.getElementById("LoginTest").addEventListener("submit", validate, false);
     // document.getElementById("calc").onsubmit = allCalc;
     // document.getElementById("LoginTest").onsubmit = validate;
 }
