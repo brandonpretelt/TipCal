@@ -2,7 +2,9 @@
 
 This is a Tip Calculator. It's really basic as it's my first real project. I'm still learning JavaScript but it should get better with time. 
 
-Website: http://tipcalculator.brandonpretelt.com
+Website*: http://tipcalculator.brandonpretelt.com
+
+* Right now, it's only for smartphones. I'm planning to update it for tablets and desktop eventually.
 
 ### Random Stuff 
 
